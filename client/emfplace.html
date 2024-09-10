@@ -1,0 +1,43 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.4">
+    <link rel="stylesheet" href="main.css">
+    <title>EMF/Place</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/indexCtrl.js"></script>
+    <script type="text/javascript" src="js/serviceWrk.js"></script>
+  </head>
+  <body>
+
+    <div class="canvas"></div>
+
+    <div id="menu">
+      <div id="color" class="content">
+        <label for="colorpicker">Choissiez-votre couleur</label>
+        <input type="color" id="colorpicker">
+      </div>
+      <button type="button" class="collapsible">+ Liste couleur</button>
+    </div>
+
+    <script>
+
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.previousElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
+
+

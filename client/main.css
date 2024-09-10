@@ -1,0 +1,77 @@
+html,body{
+    margin: 0;
+}
+
+body {
+    font-family: Arial;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: dimgrey;
+}
+
+.canvas {
+    display: grid;
+    grid-template-columns: repeat(155, 1fr);
+    gap: 0;
+    margin: 2px;
+}
+
+.pixel {
+    width: 10px;
+    height: 10px;
+    border-top: 0.01px solid #ccc;
+    border-left: 0.01px solid #ccc;
+    background-color: white;
+}
+
+
+
+.pixel:hover {
+    border-color: red;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+    background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+#menu{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+@media screen and (max-width: 1000px) {
+    #menu {
+        position: fixed;
+        bottom: 0;
+        top: auto; /* Reset top positioning */
+    }
+    html,body{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        height: 100%;
+        width: 100%;
+    }
+}

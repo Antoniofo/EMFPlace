@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet "EMF/Place" - Admin</title>
+    <link rel="stylesheet" href="indexcss.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/adminCtrl.js"></script>
+    <script type="text/javascript" src="js/serviceWrk.js"></script>
+  </head>
+  <body>
+    <header>
+        <h1>Projet "EMF/Place"</h1>
+        <p>Page administrateur</p>
+    </header>
+
+    <main>
+      <section class="description">
+        <h2>Accès admin</h2>
+        <p>
+          Attention, vous n'êtes pas autorisé ici.
+        </p>
+      </section>
+
+      <section class="get-started">
+        <h2>Reinitialiser la toile</h2>
+        <p>
+          Reset a blanc la toile complète
+        </p>
+        <a onclick="ctrlAdmin.resetToWhite()" class="start-button">Reset</a>
+      </section>
+
+      <section class="get-started">
+        <h2>Retour sur la toile</h2>
+          <p>
+
+          </p>
+        <a onclick="wrk.stop()" class="start-button">Back to action</a>
+      </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 EMF</p>
+    </footer>
+  </body>
+</html>
